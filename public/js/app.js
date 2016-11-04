@@ -1,22 +1,29 @@
-var nombre = "<p><strong>Nombre : </strong>__nombre__</p>";
 $(document).ready(function(){
 	$.ajax({
-		url: "http://localhost:3001/demo.json",
+		url: "http://localhost:3002/demo.json",
 		type : "GET",
 		success : function(response){
-			$("#datos").html(nombre.replace("__nombre__",response.nombre)
-							.replace("__apellido__",response.apellido)
-							.replace("__edad__",response.edad)
-							.replace("__fechaNac__",response.fechaNacimiento)
-							.replace("__dni__",response.dni)
-							.replace("__email__",response.email)
-						);
+			//nombres
 			var nombres = "<ul>";
-			for( var i = 0 , l = response.length ; i < l ; i++ ){
-				response[i].nombre;
+			for( var i = 0 ; i < response.length ; i++ ){
+				nombres += "<li>" + response[i].nombre + "</li>";
 			}
-			nombres += "</ul>";
-			$("nombres").html(hobbies);
+				nombres += "</ul>";
+			$("#nombres").html(nombres);
+			//apellidos
+			var apellidos = "<ul>";
+			for( var i = 0 ; i < response.length ; i++ ){
+				apellidos += "<li>" + response[i].apellido + "</li>";
+			}
+			apellidos += "</ul>";
+			$("#apellidos").html(apellidos);
+			//correos
+			var correos = "<ul>";
+			for( var i = 0 ; i < response.length ; i++ ){
+				correos += "<li>" + response[i].correo + "</li>";
+			}
+				correos += "</ul>";
+			$("#correos").html(correos);
 		},
 		error:function(error){
 			console.log(error);

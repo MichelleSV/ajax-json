@@ -1,0 +1,21 @@
+.title{
+	background-color: black;
+	color: coral;
+	font-family: fantasy;
+	font-size: 40px;
+	padding: 10px 0;
+	text-align: center;
+	margin-top: 20px;
+}
+li{
+	list-style:none;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+h2{
+	font-family: monospace;
+	font-size: 20px;
+	color: coral;
+}

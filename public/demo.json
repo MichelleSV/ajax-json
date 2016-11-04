@@ -2,16 +2,26 @@
 	{
 		"nombre" : "Michelle",
 		"apellido" : "Seguil",
-		"email" : "seguilvilchezmichelle@gmail.com"
+		"correo" : "seguilvilchezmichelle@gmail.com"
 	},
 		{
-		"nombre" : "Liz",
-		"apellido" : "Seguil",
-		"email" : "seguilvilchezmichelle@gmail.com"
+		"nombre" : "Sofía",
+		"apellido" : "Caballero",
+		"correo" : "sofiitacaballery@gmail.com"
 	},
 	{
-		"nombre" : "Sthefany",
-		"apellido" : "Seguil",
-		"email" : "seguilvilchezmichelle@gmail.com"
+		"nombre" : "Maryori",
+		"apellido" : "Quiroz",
+		"correo" : "maryoriquiroz@gmail.com"
+	},
+	{
+		"nombre" : "Andrea",
+		"apellido" : "Maucalli",
+		"correo" : "andreamaucalli@gmail.com"
+	},
+		{
+		"nombre" : "Janet",
+		"apellido" : "Quispe",
+		"correo" : "lajanet@gmail.com"
 	}
 ]
